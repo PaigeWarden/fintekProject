@@ -1,0 +1,163 @@
+/*
+	Please add your custom CSS in this file. The hex codes for the colours are below.
+
+	Main text color (grey): #838383
+	Dark grey for the speech bubble at the top: #424242
+	Grey border colour for the main content area, and the buttons at the bottom: #DCDCDC
+	Orange colour for the highlighted "only 3 days left" text and the progress bar: #F15E33
+	The background for the part of the progress bar that isn't filled in: #FAFAFA
+	Buttons at the bottom: #838383
+	Green button: #00BE1C
+	Green button border: #01B21A
+	"Why give 50" link: #25A5D8
+*/
+/* main box area */
+.orange-text {
+    color: #F15E33;
+}
+.crowdfunding-widget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #DCDCDC;
+    padding: 20px;
+}
+/* text container */
+.text-container {
+    position: relative;
+    margin-bottom: 20px;
+    height: 100px;
+}
+
+.text-container p {
+    color: #838383;
+    font-size: 16px;
+    font-family: "Roboto Light";
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+/* donor box and currency symbol */
+
+.donation-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 900px;
+}
+.currency-input{
+    position: relative;
+}
+
+.currency-symbol {
+    position: absolute;
+    left: 5px;
+    top: 60%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: #838383;
+}
+.input-value {
+    width: 70px;
+    height: 30px;
+    margin-top: 10px;
+    padding-left: 35px;
+    font-size: 16px;
+    border: 1px solid #dcdcdc;
+}
+/* Give now button */
+
+.give-now-button {
+    display: block;
+    width: 8%;
+    height: 30px;
+    margin-top: 20px;
+    background-color: #00BE1C;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+    border: solid;
+    border-color:#01B21A;
+    flex-grow: 0.1;
+}
+/* why give link */
+.why-give-link {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+/* Progress bar */
+.progress-container {
+    width: 24.5%;
+    height: 10px;
+    background-color: #fafafa;
+    border: 1px solid #dcdcdc;
+    margin-top: 20px;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 75%;
+    background-color: #f15e33;
+    position: relative;
+}
+
+/* speach bubble */
+.speech-bubble {
+    position: relative;
+    display: inline-block;
+    background-color: #424242;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.speech-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(100%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: #424242 transparent transparent transparent;
+}
+
+/* bottom buttons */
+.bottom-buttons {
+    margin-top: 20px;
+}
+
+.save-button,
+.friends-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #FAFAFA;
+    color: #838383;
+    border: strong;
+    border-radius: 5px;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    border-color:#DCDCDC ;
+}
+
+.why-give-link {
+    position: relative;
+    display: block;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-right: auto;
+    color: #25A5D8;
+}

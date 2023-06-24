@@ -1,0 +1,51 @@
+<html lang="en-GB" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>HTML / CSS Code test</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<!-- speach bubble container -->
+
+<div class="speech-bubble">
+    <p id="remaining-amount"><strong>£259</strong> still needed for this project</p> <!-- Will use Javascript to automatically update this when needed -->
+</div>
+
+<!-- Progress bar above the main container -->
+<div class="progress-container">
+    <div class="progress-bar"></div>
+    <div class="progress-fill"></div>
+</div>
+
+<!-- The main text container -->
+<div class="crowdfunding-widget">
+    <div class="text-container">
+        <p id="days-left"><strong><span class="orange-text">Only 3 days left</span></strong> to fund this project</p> <!-- java script included -->
+        <p id="donor-count"> Join the <span id="current-donor-count">56</span>  other donors who have already supported our project. Every penny helps.</p> <!-- java script included -->
+    </div>
+
+<!-- container for the donation value -->
+    <div class="donation-container">
+        <div class="currency-input">
+        <span class="currency-symbol">£</span>
+        <input type="text" class="input-value" value="50"  readonly/>
+    </div>
+        <!-- give now button with class for styling -->
+        <button class="give-now-button">Give Now</button>
+</div>
+
+
+    <!-- hyperlink to a why give link !!UNKNOWN LINK AT THIS TIME -->
+    <a href="#" class="why-give-link"><i>Why Give £50?</i></a>
+</div>
+
+
+    <div class="bottom-buttons">
+        <button class="save-button"><strong>Save for later</strong></button>
+        <button class="friends-button"><strong>Tell your friends</strong></button>
+    </div>
+
+ </body>
+</html>
